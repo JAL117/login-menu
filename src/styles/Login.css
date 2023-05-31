@@ -1,0 +1,84 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Cambiado a min-height para permitir que el contenedor se expanda */
+}
+
+.login-form {
+  max-width: 600px;
+  width: 90%; /* Cambiado a un porcentaje para que se ajuste al ancho del contenedor */
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.271);
+  color: #0534b6;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 32px; /* Cambiado a un tamaño de fuente más pequeño para dispositivos móviles */
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-label {
+  font-weight: bold;
+}
+
+.login-form .form-control {
+  width: 100%;
+  max-width: 550px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.login-submit {
+  margin-top: 25px;
+  display: block;
+  width: 100%; /* Cambiado a un ancho del 100% para que se ajuste al ancho del formulario */
+  max-width: 200px; /* Agregado un ancho máximo para evitar que sea demasiado ancho en pantallas grandes */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+  background-color: #0056b3;
+}
+
+.mb-3 {
+  font-size: 20px; /* Cambiado a un tamaño de fuente más pequeño para dispositivos móviles */
+  margin-bottom: 30px;
+}
+
+/* Agregado un estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+  
+  .login-form {
+    max-width: 400px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+  }
+  
+  .login-form .form-control {
+    max-width: 350px;
+  }
+}
